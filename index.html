@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Water Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+  <header>
+    <h1>🌾 Crop Water Management Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- Summary Cards -->
+    <section class="cards">
+      <div class="card">
+        <h2>Total Fields Monitored</h2>
+        <p id="total-fields">3</p>
+      </div>
+      <div class="card">
+        <h2>Average Water Requirement</h2>
+        <p id="average-water">50 mm</p>
+      </div>
+      <div class="card">
+        <h2>Critical Fields</h2>
+        <p id="critical-fields">1</p>
+      </div>
+    </section>
+
+    <!-- Graph Section -->
+    <section class="graphs">
+      <canvas id="waterChart"></canvas>
+      <canvas id="soilChart"></canvas>
+    </section>
+
+    <!-- Real-Time Predictions -->
+    <section class="predictions">
+      <h2>Real-Time Predictions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Field ID</th>
+            <th>Crop Type</th>
+            <th>Predicted Water (mm)</th>
+            <th>Lower Bound</th>
+            <th>Upper Bound</th>
+          </tr>
+        </thead>
+        <tbody id="prediction-table">
+          <!-- Rows will be dynamically added -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Crop Water Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

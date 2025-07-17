@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Cards Section */
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .card h2 {
+    color: #4caf50;
+  }
+  
+  /* Graphs Section */
+  .graphs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  canvas {
+    width: 45%;
+    max-height: 300px;
+  }
+  
+  /* Predictions Table */
+  .predictions {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+  }
+  
